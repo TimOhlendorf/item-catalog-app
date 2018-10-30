@@ -28,14 +28,14 @@ h3 {
  p {
  	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
  	font-size: 16px;
- 	color: #7B7573;
+ 	color: white;
  	line-height: 24px;
  	font-weight: 400;
  }
 
  strong {
  	font-size: 16px;
- 	color: #7B7573;
+ 	color: white;
  	line-height: 24px;
  }
 
@@ -159,13 +159,13 @@ u }
 	background-color: dodgerblue;
 	width:100%;
 	text-decoration: none;
-
+    color: white;
 }
 
 .flash li {
 	list-style-type: none;
 	text-align: center;
-
+    color: white;
 }
 
 .showitem{

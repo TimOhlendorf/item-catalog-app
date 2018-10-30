@@ -13,15 +13,9 @@
 		<div class="col-md-6 col-md-offset-1 padding-top">
              <label for="item" class="col-md-12" style="background-color:aliceblue"><h2> Are you sure you want to delete {{item.name}}?</h2></label> 
 <form action="#" method = 'post'>
-
-
-	<button type="submit" class="btn btn-primary delete" id="submit" type="submit">
+	<button type="submit" class="btn btn-primary delete" name="button"  value="delete">
 	<span class="glyphicon glyphicon-trash" aria-hidden="true"></span>Delete</button>
-	<a href = '{{url_for('showCategories')}}'>
-		<button class="btn btn-danger delete">
-		<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
-	</a>
-
+    <button class="btn btn-danger delete" name="button" type="submit" value="cancel"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span> Cancel</button>
 </form>
     </div>
 </div>

@@ -15,16 +15,16 @@
 			<form action="#" method = "post">
 				<div class="form-group">
 					<label for="name">Name:</label>
-					<input type ="text" maxlength="50" class="form-control" name="name" >
+					<input type ="text" maxlength="50" class="form-control" name="name" required>
 
 					<label for="description">Description:</label>
-					<textarea class="form-control" maxlength="250" rows="3" name="description" ></textarea>
+					<textarea class="form-control" maxlength="250" rows="3" name="description" required></textarea>
                     
 					<label for="category">Category:</label>
                     {% for c in allcategories %}
-						<div class="radio">
+						<div class="radio" required>
 					  <label>
-					    <input type="radio" name="category_id" value="{{c.id}}" >{{c.name}}
+					    <input type="radio" name="category_id" value="{{c.id}}" required>{{c.name}}
 					  </label>
 						</div>
 					{% endfor %}
